@@ -1,4 +1,5 @@
 import React from "react";
+import '../hojas-de-estilos/Testimonio.css'
 
 function Testimonio(){
     return(
@@ -7,7 +8,7 @@ function Testimonio(){
             src={require("../imagenes/testimonio-emma.png")}
             alt = "Foto de Emma"/>
             <div className="contenedor-texto-testimonio">
-                <p className="nombre-testimonio">Jonatan Jafet</p>
+                <p className="nombre-testimonio">Maria</p>
                 <p className="cargo-testimonio">Ingeniero de software</p>
                 <p className="testo-tetimonio"> jeimircoimeociemrciemciermceirmceoicmeoirmcoeirmcirmceoircmeoircmeoic</p>
             </div>
