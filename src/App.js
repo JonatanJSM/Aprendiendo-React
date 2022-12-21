@@ -2,11 +2,15 @@ import './App.css';
 import Boton from './componentes/Boton';
 import freeCodeCampLogo from './imagenes/freecodecamp-logo.png'
 import Contador from "./componentes/Contador"
+import { useState } from 'react';
 
 function App() {
 
+    //Valor del estado, función para actualizar
+  const [numClics, sNumClics] = useState(0);
+
   const manejarClic = () =>{
-    console.log("Clic");
+    sNumClics(numClics + 1);
   }
 
   const reiniciarcontador = () =>{
@@ -23,9 +27,7 @@ function App() {
         />
       </div>
       <div className='contenedor-principal'>
-        <Contador
-        numClics='1'
-        />
+        <Contador numClics={numClics} />
         <Boton
           texto = 'Click'
           esBotonDeClic = {true}
