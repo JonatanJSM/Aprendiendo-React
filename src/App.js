@@ -1,6 +1,7 @@
 import './App.css';
 import Boton from './componentes/Boton';
 import freeCodeCampLogo from './imagenes/freecodecamp-logo.png'
+import Contador from "./componentes/Contador"
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
         />
       </div>
       <div className='contenedor-principal'>
+        <Contador
+        numClics='1'
+        />
         <Boton
           texto = 'Click'
           esBotonDeClic = {true}
