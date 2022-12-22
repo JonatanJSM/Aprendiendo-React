@@ -14,7 +14,7 @@ function App() {
   }
 
   const reiniciarcontador = () =>{
-    console.log("Reinicio");
+    sNumClics(0);
   }
 
   return (
