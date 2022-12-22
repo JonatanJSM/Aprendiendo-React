@@ -2,12 +2,16 @@ import React from "react";
 import '../hojas-de-estilos/Boton.css'
 
 //sintaxis de desestructuración
-function Boton({texto, esBotonDeClic, manejarClic}){
+function Boton(props){
+    const esOperador = valor => {
+        return isNaN(valor) && (valor != '.') && (valor != '=');
+    };
+
     return(
-        <button className={esBotonDeClic ? "boton-clic": "boton-reiniciar"}
-        onClick={manejarClic}>
-            {texto}
-        </button>
+        <div                                                                        //Remueve espacios al final de la cadena
+        className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}>
+            {props.children}
+        </div>
     );
 }
 export default Boton;
