@@ -12,6 +12,21 @@
     cursor: pointer;     
 }
 
+/*Colores degradado*/
+                /*El enesimo hijo */
+            /* Por cada 3 elementos se va a repetir esa secuencia de colores */
+.tarea-contenedor:nth-child(3n + 1) {
+    background-color: #4848de;
+  }
+  
+.tarea-contenedor:nth-child(3n + 2) {
+    background-color: #8989ee;
+}
+  
+.tarea-contenedor:nth-child(3n + 3) {
+    background-color: #a7a7eb;
+}
+
 .tarea-texto {
     width: 100%;
     height: 100%;
